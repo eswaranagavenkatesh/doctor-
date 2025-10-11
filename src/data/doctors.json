@@ -1,0 +1,68 @@
+[
+  {
+    "id": "1",
+    "name": "Dr. Rajesh Kumar",
+    "specialization": "General Medicine",
+    "category": "General Medicine",
+    "experience": "15 years",
+    "fee": 500,
+    "image": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=400&fit=crop",
+    "qualifications": "MBBS, MD",
+    "availability": "Mon-Sat, 9:00 AM - 5:00 PM"
+  },
+  {
+    "id": "2",
+    "name": "Dr. Priya Sharma",
+    "specialization": "Diabetologist",
+    "category": "Sugar Clinic",
+    "experience": "12 years",
+    "fee": 600,
+    "image": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop",
+    "qualifications": "MBBS, MD (Endocrinology)",
+    "availability": "Mon-Fri, 10:00 AM - 6:00 PM"
+  },
+  {
+    "id": "3",
+    "name": "Dr. Amit Patel",
+    "specialization": "Pediatrician",
+    "category": "Pediatrics",
+    "experience": "10 years",
+    "fee": 550,
+    "image": "https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&h=400&fit=crop",
+    "qualifications": "MBBS, MD (Pediatrics)",
+    "availability": "Mon-Sat, 8:00 AM - 4:00 PM"
+  },
+  {
+    "id": "4",
+    "name": "Dr. Sneha Desai",
+    "specialization": "ENT Specialist",
+    "category": "ENT",
+    "experience": "14 years",
+    "fee": 700,
+    "image": "https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&h=400&fit=crop",
+    "qualifications": "MBBS, MS (ENT)",
+    "availability": "Tue-Sat, 11:00 AM - 7:00 PM"
+  },
+  {
+    "id": "5",
+    "name": "Dr. Vikram Singh",
+    "specialization": "Cardiologist",
+    "category": "General Medicine",
+    "experience": "18 years",
+    "fee": 800,
+    "image": "https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=400&h=400&fit=crop",
+    "qualifications": "MBBS, MD, DM (Cardiology)",
+    "availability": "Mon-Fri, 9:00 AM - 3:00 PM"
+  },
+  {
+    "id": "6",
+    "name": "Dr. Kavita Mehta",
+    "specialization": "Gynecologist",
+    "category": "General Medicine",
+    "experience": "16 years",
+    "fee": 650,
+    "image": "https://images.unsplash.com/photo-1638202993928-7267aad84c31?w=400&h=400&fit=crop",
+    "qualifications": "MBBS, MD (Obs & Gyn)",
+    "availability": "Mon-Sat, 10:00 AM - 6:00 PM"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1",
+    "name": "Ramesh Gupta",
+    "rating": 5,
+    "message": "Excellent service! The doctors are very professional and caring. I've been coming here for my regular checkups for 2 years now.",
+    "date": "2024-09-15",
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Ramesh"
+  },
+  {
+    "id": "2",
+    "name": "Sunita Sharma",
+    "rating": 5,
+    "message": "Very impressed with the lab services. Results came quickly and the home sample collection was very convenient.",
+    "date": "2024-09-20",
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Sunita"
+  },
+  {
+    "id": "3",
+    "name": "Anil Kumar",
+    "rating": 4,
+    "message": "Good experience overall. The staff is helpful and the clinic is very clean. Appointment system works well.",
+    "date": "2024-10-01",
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Anil"
+  },
+  {
+    "id": "4",
+    "name": "Meera Patel",
+    "rating": 5,
+    "message": "Dr. Sharma is amazing with children. My son was very comfortable during his consultation. Highly recommend for pediatric care!",
+    "date": "2024-10-05",
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Meera"
+  },
+  {
+    "id": "5",
+    "name": "Vikram Singh",
+    "rating": 5,
+    "message": "The health package was very comprehensive and affordable. Found out about my vitamin deficiency in time. Thank you!",
+    "date": "2024-10-08",
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Vikram"
+  }
+]

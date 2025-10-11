@@ -1,0 +1,89 @@
+[
+  {
+    "id": "1",
+    "name": "Diabetic Health Package",
+    "description": "Comprehensive diabetes screening and monitoring",
+    "price": 1800,
+    "tests": [
+      "Fasting Blood Sugar",
+      "Post Prandial Blood Sugar",
+      "HbA1c",
+      "Lipid Profile",
+      "Kidney Function Test",
+      "Urine Routine"
+    ],
+    "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=400&fit=crop",
+    "recommended": "For diabetic patients and those at risk"
+  },
+  {
+    "id": "2",
+    "name": "Cardiac Health Package",
+    "description": "Complete heart health assessment",
+    "price": 2200,
+    "tests": [
+      "Lipid Profile",
+      "ECG",
+      "Echocardiography",
+      "Troponin Test",
+      "CBC",
+      "Blood Pressure Monitoring"
+    ],
+    "image": "https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?w=600&h=400&fit=crop",
+    "recommended": "For those with family history of heart disease"
+  },
+  {
+    "id": "3",
+    "name": "Women's Wellness Package",
+    "description": "Comprehensive health screening for women",
+    "price": 2500,
+    "tests": [
+      "Thyroid Profile",
+      "Vitamin D",
+      "Calcium Test",
+      "Complete Blood Count",
+      "Pap Smear",
+      "Mammography",
+      "Bone Density"
+    ],
+    "image": "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=600&h=400&fit=crop",
+    "recommended": "For women above 30 years"
+  },
+  {
+    "id": "4",
+    "name": "Full Body Checkup",
+    "description": "Comprehensive health screening with 60+ tests",
+    "price": 3500,
+    "tests": [
+      "Complete Blood Count",
+      "Lipid Profile",
+      "Liver Function Test",
+      "Kidney Function Test",
+      "Thyroid Profile",
+      "Diabetes Screening",
+      "Vitamin Tests",
+      "ECG",
+      "Chest X-Ray"
+    ],
+    "image": "https://images.unsplash.com/photo-1666214280557-f1b5022eb634?w=600&h=400&fit=crop",
+    "recommended": "Annual health screening for all adults"
+  },
+  {
+    "id": "5",
+    "name": "Senior Citizen Package",
+    "description": "Tailored health screening for elderly",
+    "price": 2800,
+    "tests": [
+      "Complete Blood Count",
+      "Diabetes Profile",
+      "Lipid Profile",
+      "Kidney Function",
+      "Liver Function",
+      "Thyroid Profile",
+      "Vitamin B12 & D",
+      "ECG",
+      "Bone Density"
+    ],
+    "image": "https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?w=600&h=400&fit=crop",
+    "recommended": "For individuals above 60 years"
+  }
+]

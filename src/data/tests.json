@@ -1,0 +1,82 @@
+[
+  {
+    "id": "1",
+    "name": "Complete Blood Count (CBC)",
+    "description": "Comprehensive blood analysis including RBC, WBC, platelets, and hemoglobin",
+    "price": 350,
+    "duration": "4 hours",
+    "preparation": "Fasting not required"
+  },
+  {
+    "id": "2",
+    "name": "Fasting Blood Sugar",
+    "description": "Measures glucose level after 8-12 hours of fasting",
+    "price": 150,
+    "duration": "2 hours",
+    "preparation": "8-12 hours fasting required"
+  },
+  {
+    "id": "3",
+    "name": "HbA1c (Glycated Hemoglobin)",
+    "description": "Average blood sugar level over the past 2-3 months",
+    "price": 450,
+    "duration": "4 hours",
+    "preparation": "No fasting required"
+  },
+  {
+    "id": "4",
+    "name": "Thyroid Profile (T3, T4, TSH)",
+    "description": "Complete thyroid function assessment",
+    "price": 550,
+    "duration": "6 hours",
+    "preparation": "No special preparation"
+  },
+  {
+    "id": "5",
+    "name": "Lipid Profile",
+    "description": "Cholesterol and triglyceride levels assessment",
+    "price": 500,
+    "duration": "4 hours",
+    "preparation": "12 hours fasting required"
+  },
+  {
+    "id": "6",
+    "name": "Liver Function Test (LFT)",
+    "description": "Comprehensive liver health assessment",
+    "price": 600,
+    "duration": "6 hours",
+    "preparation": "Fasting preferred"
+  },
+  {
+    "id": "7",
+    "name": "Kidney Function Test (KFT)",
+    "description": "Assesses kidney health and function",
+    "price": 550,
+    "duration": "6 hours",
+    "preparation": "No fasting required"
+  },
+  {
+    "id": "8",
+    "name": "Vitamin D Test",
+    "description": "Measures vitamin D levels in blood",
+    "price": 800,
+    "duration": "24 hours",
+    "preparation": "No special preparation"
+  },
+  {
+    "id": "9",
+    "name": "Full Body Checkup",
+    "description": "Comprehensive health screening with 60+ tests",
+    "price": 2500,
+    "duration": "24 hours",
+    "preparation": "12 hours fasting required"
+  },
+  {
+    "id": "10",
+    "name": "Urine Routine Examination",
+    "description": "Complete urine analysis for various health parameters",
+    "price": 200,
+    "duration": "2 hours",
+    "preparation": "Morning sample preferred"
+  }
+]

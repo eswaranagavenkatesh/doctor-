@@ -1,0 +1,42 @@
+[
+  {
+    "id": "doctor-clinic",
+    "title": "Doctor Clinic",
+    "description": "Comprehensive medical consultations with experienced doctors across multiple specializations",
+    "icon": "Stethoscope",
+    "route": "/services/doctor-clinic",
+    "features": ["General Medicine", "Sugar Clinic", "Pediatrics", "ENT", "Cardiology", "Gynecology"]
+  },
+  {
+    "id": "medical-lab",
+    "title": "Medical Lab & Diagnostics",
+    "description": "Advanced diagnostic services with accurate results and home sample collection",
+    "icon": "Microscope",
+    "route": "/services/medical-lab",
+    "features": ["Blood Tests", "Sugar Tests", "Thyroid Profile", "Full Body Checkup", "ECG", "X-Ray"]
+  },
+  {
+    "id": "medical-shop",
+    "title": "Medical Shop",
+    "description": "Quality medicines and healthcare products with doorstep delivery",
+    "icon": "Pill",
+    "route": "/services/medical-shop",
+    "features": ["Prescription Medicines", "OTC Products", "Supplements", "Medical Devices", "Personal Care"]
+  },
+  {
+    "id": "lifestyle-clinic",
+    "title": "Lifestyle Clinic",
+    "description": "Holistic wellness programs for a healthier lifestyle",
+    "icon": "Heart",
+    "route": "/services/lifestyle-clinic",
+    "features": ["Yoga Therapy", "Nutrition Guidance", "Physiotherapy", "Mental Wellness", "Weight Management"]
+  },
+  {
+    "id": "home-health-care",
+    "title": "Home Health Care",
+    "description": "Professional healthcare services delivered at your doorstep",
+    "icon": "Home",
+    "route": "/services/home-health-care",
+    "features": ["Elderly Care", "Home Nursing", "Post-Surgery Support", "Physiotherapy at Home", "Sample Collection"]
+  }
+]
