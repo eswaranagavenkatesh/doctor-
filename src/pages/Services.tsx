@@ -49,14 +49,14 @@ const Services = () => {
         title="Healthcare Services in Visakhapatnam | Doctor, Lab, Pharmacy, Home Care - Vishakaha Clinic"
         description="Comprehensive medical services in Vizag: Expert doctor consultations, advanced diagnostic lab tests, 24/7 pharmacy, home healthcare, physiotherapy & wellness programs. Book online or visit our clinic near KGH & Madhurawada."
         keywords="healthcare services visakhapatnam, doctor consultation vizag, medical lab services, pharmacy vizag, home healthcare services, diagnostic tests visakhapatnam, health checkup packages, physiotherapy vizag, medical clinic services, multispeciality clinic vizag"
-        canonicalUrl="https://vishakahaclinic.com/services"
+        canonicalUrl="https://visakhamultispeciality.com/services"
       />
       <StructuredData 
         type="service" 
         data={{
           breadcrumb: [
-            { name: "Home", url: "https://vishakahaclinic.com" },
-            { name: "Services", url: "https://vishakahaclinic.com/services" }
+            { name: "Home", url: "https://visakhamultispeciality.com" },
+            { name: "Services", url: "https://visakhamultispeciality.com/services" }
           ]
         }}
       />

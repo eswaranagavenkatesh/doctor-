@@ -46,14 +46,14 @@ const Doctors = () => {
         title="Best Doctors in Visakhapatnam | Expert Specialists at Vishakaha Multispeciality Clinic"
         description="Consult experienced specialist doctors in Vizag - Cardiologists, Pediatricians, Gynecologists, ENT specialists, General physicians & more. 25+ expert doctors with online appointment booking. Best medical care near KGH & Madhurawada."
         keywords="best doctors visakhapatnam, cardiologist vizag, pediatrician visakhapatnam, gynecologist vizag, general physician near me, ENT specialist visakhapatnam, diabetologist vizag, orthopedic doctor visakhapatnam, dermatologist vizag, medical specialist near KGH, doctor consultation online vizag"
-        canonicalUrl="https://vishakahaclinic.com/doctors"
+        canonicalUrl="https://visakhamultispeciality.com/doctors"
       />
       <StructuredData 
         type="doctor" 
         data={{
           breadcrumb: [
-            { name: "Home", url: "https://vishakahaclinic.com" },
-            { name: "Doctors", url: "https://vishakahaclinic.com/doctors" }
+            { name: "Home", url: "https://visakhamultispeciality.com" },
+            { name: "Doctors", url: "https://visakhamultispeciality.com/doctors" }
           ]
         }}
       />

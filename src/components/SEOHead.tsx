@@ -14,7 +14,7 @@ const SEOHead = ({
   description, 
   keywords, 
   canonicalUrl,
-  ogImage = "https://vishakahaclinic.com/og-image.jpg",
+  ogImage = "https://visakhamultispeciality.com/og-image.jpg",
   ogType = "website"
 }: SEOHeadProps) => {
   useEffect(() => {

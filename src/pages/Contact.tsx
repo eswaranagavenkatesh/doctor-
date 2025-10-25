@@ -34,14 +34,14 @@ const Contact = () => {
         title="Contact Vishakaha Multispeciality Clinic Visakhapatnam | Location, Phone, Email"
         description="Contact best multispeciality clinic in Vizag. Visit us at KGH Junction & Madhurawada. Call +91 891 234 5678 for appointments, emergencies & medical inquiries. Open Mon-Sat 8AM-8PM, Sun 9AM-2PM."
         keywords="contact vishakaha clinic, clinic near KGH visakhapatnam, multispeciality hospital madhurawada, clinic phone number vizag, healthcare center contact vizag, medical clinic location visakhapatnam, doctor appointment contact, emergency clinic vizag"
-        canonicalUrl="https://vishakahaclinic.com/contact"
+        canonicalUrl="https://visakhamultispeciality.com/contact"
       />
       <StructuredData 
         type="contact" 
         data={{
           breadcrumb: [
-            { name: "Home", url: "https://vishakahaclinic.com" },
-            { name: "Contact Us", url: "https://vishakahaclinic.com/contact" }
+            { name: "Home", url: "https://visakhamultispeciality.com" },
+            { name: "Contact Us", url: "https://visakhamultispeciality.com/contact" }
           ]
         }}
       />
@@ -95,11 +95,11 @@ const Contact = () => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <a href="mailto:info@vishakahaclinic.com" className="block text-sm font-semibold text-primary hover:underline break-all">
-                info@vishakahaclinic.com
+              <a href="mailto:info@visakhamultispeciality.com" className="block text-sm font-semibold text-primary hover:underline break-all">
+                info@visakhamultispeciality.com
               </a>
-              <a href="mailto:appointments@vishakahaclinic.com" className="block text-sm font-semibold text-primary hover:underline break-all">
-                appointments@vishakahaclinic.com
+              <a href="mailto:appointments@visakhamultispeciality.com" className="block text-sm font-semibold text-primary hover:underline break-all">
+                appointments@visakhamultispeciality.com
               </a>
             </CardContent>
           </Card>

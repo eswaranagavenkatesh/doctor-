@@ -73,7 +73,7 @@ const Home = () => {
         title="Best Multispeciality Clinic in Visakhapatnam | Vishakaha Healthcare - 10 Years Excellence"
         description="Premier multispeciality hospital in Vizag offering expert doctor consultations, advanced diagnostic lab, pharmacy, home healthcare & wellness services. 10+ years trusted healthcare near KGH & Madhurawada. Book appointment online."
         keywords="multispeciality clinic visakhapatnam, best hospital in vizag, doctor consultation vizag, medical lab visakhapatnam, pharmacy near KGH, home healthcare vizag, health checkup packages, cardiologist vizag, pediatrician visakhapatnam, general physician near me, diagnostic center vizag, pathology lab visakhapatnam, lifestyle clinic vizag, physiotherapy visakhapatnam, emergency clinic jagadamba junction, best clinic near KGH, multispeciality hospital madhurawada, healthcare services andhra pradesh"
-        canonicalUrl="https://vishakahaclinic.com"
+        canonicalUrl="https://visakhamultispeciality.com"
       />
       <StructuredData type="homepage" />
       <Navbar />
@@ -443,8 +443,8 @@ const Home = () => {
                 <CardTitle>Email Us</CardTitle>
               </CardHeader>
               <CardContent>
-                <a href="mailto:info@vishakahaclinic.com" className="block text-lg font-semibold text-primary hover:underline mb-2 break-all">
-                  info@vishakahaclinic.com
+                <a href="mailto:info@visakhamultispeciality.com" className="block text-lg font-semibold text-primary hover:underline mb-2 break-all">
+                  info@visakhamultispeciality.com
                 </a>
                 <p className="text-sm text-muted-foreground">
                   We'll respond within 24 hours

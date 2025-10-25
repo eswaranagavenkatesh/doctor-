@@ -16,11 +16,11 @@ const StructuredData = ({ type, data }: StructuredDataProps) => {
       "name": "Vishakaha Multispeciality Clinic",
       "alternateName": "Visakha Multi Speciality Clinics",
       "description": "Premier multispeciality healthcare facility in Visakhapatnam offering comprehensive medical services including doctor consultations, diagnostic lab, pharmacy, lifestyle wellness, and home healthcare with 10 years of trusted excellence.",
-      "url": "https://vishakahaclinic.com",
-      "logo": "https://vishakahaclinic.com/logo.png",
-      "image": "https://vishakahaclinic.com/clinic-image.jpg",
+      "url": "https://visakhamultispeciality.com",
+      "logo": "https://visakhamultispeciality.com/logo.png",
+      "image": "https://visakhamultispeciality.com/clinic-image.jpg",
       "telephone": "+918912345678",
-      "email": "info@vishakahaclinic.com",
+      "email": "info@visakhamultispeciality.com",
       "priceRange": "₹₹",
       "paymentAccepted": "Cash, Credit Card, Debit Card, UPI, Insurance",
       "currenciesAccepted": "INR",
@@ -98,10 +98,10 @@ const StructuredData = ({ type, data }: StructuredDataProps) => {
         }
       ],
       "sameAs": [
-        "https://www.facebook.com/vishakahaclinic",
-        "https://www.instagram.com/vishakahaclinic",
-        "https://www.linkedin.com/company/vishakahaclinic",
-        "https://twitter.com/vishakahaclinic"
+        "https://www.facebook.com/visakhamultispeciality",
+        "https://www.instagram.com/visakhamultispeciality",
+        "https://www.linkedin.com/company/visakhamultispeciality",
+        "https://twitter.com/visakhamultispeciality"
       ],
       "aggregateRating": {
         "@type": "AggregateRating",
@@ -119,7 +119,7 @@ const StructuredData = ({ type, data }: StructuredDataProps) => {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "Vishakaha Multispeciality Clinic - KGH Junction",
-      "image": "https://vishakahaclinic.com/clinic-kgh.jpg",
+      "image": "https://visakhamultispeciality.com/clinic-kgh.jpg",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "KGH Down, Opp KGH Clock Tower, Krishna Nagar, Jagadamba Junction",
@@ -133,7 +133,7 @@ const StructuredData = ({ type, data }: StructuredDataProps) => {
         "latitude": "17.71072",
         "longitude": "83.29996"
       },
-      "url": "https://vishakahaclinic.com",
+      "url": "https://visakhamultispeciality.com",
       "telephone": "+918912345678",
       "openingHoursSpecification": [
         {

@@ -27,14 +27,14 @@ const About = () => {
         title="About Vishakaha Multispeciality Clinic | 10 Years Excellence in Healthcare Visakhapatnam"
         description="Leading multispeciality hospital in Vizag with 10+ years of trusted healthcare excellence. 50,000+ patients served, 25+ expert doctors, modern facilities. Comprehensive medical care with compassion near KGH & Madhurawada."
         keywords="about vishakaha clinic, best hospital visakhapatnam, healthcare excellence vizag, multispeciality clinic history, trusted hospital vizag, medical facilities visakhapatnam, healthcare center vizag, patient care excellence"
-        canonicalUrl="https://vishakahaclinic.com/about"
+        canonicalUrl="https://visakhamultispeciality.com/about"
       />
       <StructuredData 
         type="homepage" 
         data={{
           breadcrumb: [
-            { name: "Home", url: "https://vishakahaclinic.com" },
-            { name: "About Us", url: "https://vishakahaclinic.com/about" }
+            { name: "Home", url: "https://visakhamultispeciality.com" },
+            { name: "About Us", url: "https://visakhamultispeciality.com/about" }
           ]
         }}
       />
