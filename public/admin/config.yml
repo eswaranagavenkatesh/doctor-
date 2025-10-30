@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: eswaranagavenkatesh/visakhamulispeciality # Updated with actual repo
+  repo: eswaranagavenkatesh/doctor # Updated with actual repo
   branch: main
   base_url: https://api.netlify.com
   auth_endpoint: auth
