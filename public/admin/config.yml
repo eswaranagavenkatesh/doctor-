@@ -2,140 +2,157 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "public/assets"
-public_folder: "/assets"
+media_folder: "src/assets"
+public_folder: "/src/assets"
 
 collections:
+  # ================================
+  # DOCTORS
+  # ================================
   - name: "doctors"
     label: "Doctors"
     files:
       - label: "Doctors"
         name: "doctors"
-        file: "public/data/doctors.json"
+        file: "src/data/doctors.json"
         fields:
           - label: "Doctors"
             name: "doctors"
             widget: "list"
             fields:
-              - { label: "ID", name: "id", widget: "number" }
+              - { label: "ID", name: "id", widget: "string" }
               - { label: "Name", name: "name", widget: "string" }
               - { label: "Specialization", name: "specialization", widget: "string" }
-              - { label: "Qualification", name: "qualification", widget: "string" }
+              - { label: "Category", name: "category", widget: "string" }
               - { label: "Experience", name: "experience", widget: "string" }
+              - { label: "Fee", name: "fee", widget: "number" }
               - { label: "Image", name: "image", widget: "image" }
-              - { label: "Available Days", name: "availableDays", widget: "list" }
-              - { label: "Timing", name: "timing", widget: "string" }
-              - { label: "Phone", name: "phone", widget: "string" }
+              - { label: "Qualifications", name: "qualifications", widget: "string" }
+              - { label: "Availability", name: "availability", widget: "string" }
 
+  # ================================
+  # SERVICES
+  # ================================
   - name: "services"
     label: "Services"
     files:
       - label: "Services"
         name: "services"
-        file: "public/data/services.json"
+        file: "src/data/services.json"
         fields:
           - label: "Services"
             name: "services"
             widget: "list"
             fields:
-              - { label: "ID", name: "id", widget: "number" }
+              - { label: "ID", name: "id", widget: "string" }
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Description", name: "description", widget: "text" }
               - { label: "Icon", name: "icon", widget: "string" }
-              - { label: "Link", name: "link", widget: "string" }
-              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Route", name: "route", widget: "string" }
+              - label: "Features"
+                name: "features"
+                widget: "list"
+                field: { label: "Feature", name: "feature", widget: "string" }
 
+  # ================================
+  # HEALTH PACKAGES
+  # ================================
   - name: "packages"
     label: "Health Packages"
     files:
       - label: "Health Packages"
-        name: "healthPackages"
-        file: "public/data/healthPackages.json"
+        name: "packages"
+        file: "src/data/healthPackages.json"
         fields:
           - label: "Packages"
             name: "packages"
             widget: "list"
             fields:
-              - { label: "ID", name: "id", widget: "number" }
+              - { label: "ID", name: "id", widget: "string" }
               - { label: "Name", name: "name", widget: "string" }
               - { label: "Description", name: "description", widget: "text" }
               - { label: "Price", name: "price", widget: "number" }
-              - { label: "Original Price", name: "originalPrice", widget: "number", required: false }
-              - label: "Tests Included"
-                name: "testsIncluded"
+              - label: "Tests"
+                name: "tests"
                 widget: "list"
                 field: { label: "Test", name: "test", widget: "string" }
-              - label: "Benefits"
-                name: "benefits"
-                widget: "list"
-                field: { label: "Benefit", name: "benefit", widget: "string" }
-              - { label: "Suitable For", name: "suitableFor", widget: "string" }
-              - { label: "Popular", name: "popular", widget: "boolean", required: false }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Recommended For", name: "recommended", widget: "string" }
 
+  # ================================
+  # LAB TESTS
+  # ================================
   - name: "tests"
     label: "Lab Tests"
     files:
       - label: "Lab Tests"
         name: "tests"
-        file: "public/data/tests.json"
+        file: "src/data/tests.json"
         fields:
           - label: "Tests"
             name: "tests"
             widget: "list"
             fields:
-              - { label: "ID", name: "id", widget: "number" }
+              - { label: "ID", name: "id", widget: "string" }
               - { label: "Name", name: "name", widget: "string" }
-              - { label: "Category", name: "category", widget: "string" }
               - { label: "Description", name: "description", widget: "text" }
               - { label: "Price", name: "price", widget: "number" }
+              - { label: "Duration", name: "duration", widget: "string" }
               - { label: "Preparation", name: "preparation", widget: "string" }
-              - { label: "Report Time", name: "reportTime", widget: "string" }
 
+  # ================================
+  # PATIENT FEEDBACK
+  # ================================
   - name: "feedback"
     label: "Patient Feedback"
     files:
       - label: "Feedback"
         name: "feedback"
-        file: "public/data/feedback.json"
+        file: "src/data/feedback.json"
         fields:
           - label: "Feedback"
             name: "feedback"
             widget: "list"
             fields:
-              - { label: "ID", name: "id", widget: "number" }
+              - { label: "ID", name: "id", widget: "string" }
               - { label: "Name", name: "name", widget: "string" }
               - { label: "Rating", name: "rating", widget: "number", min: 1, max: 5 }
-              - { label: "Comment", name: "comment", widget: "text" }
-              - { label: "Date", name: "date", widget: "datetime" }
-              - { label: "Service", name: "service", widget: "string", required: false }
-              - { label: "Approved", name: "approved", widget: "boolean", default: true }
+              - { label: "Message", name: "message", widget: "text" }
+              - { label: "Date", name: "date", widget: "date", format: "YYYY-MM-DD" }
+              - { label: "Avatar", name: "avatar", widget: "image" }
 
+  # ================================
+  # PHARMACY PRODUCTS
+  # ================================
   - name: "products"
     label: "Pharmacy Products"
     files:
       - label: "Products"
         name: "products"
-        file: "public/data/products.json"
+        file: "src/data/products.json"
         fields:
           - label: "Products"
             name: "products"
             widget: "list"
             fields:
-              - { label: "ID", name: "id", widget: "number" }
+              - { label: "ID", name: "id", widget: "string" }
               - { label: "Name", name: "name", widget: "string" }
               - { label: "Category", name: "category", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
               - { label: "Price", name: "price", widget: "number" }
+              - { label: "In Stock", name: "inStock", widget: "boolean", default: true }
               - { label: "Image", name: "image", widget: "image" }
-              - { label: "In Stock", name: "inStock", widget: "boolean" }
-              - { label: "Prescription Required", name: "prescriptionRequired", widget: "boolean" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Prescription Required", name: "prescription", widget: "boolean", required: false }
 
+  # ================================
+  # GALLERY
+  # ================================
   - name: "gallery"
     label: "Gallery"
     files:
       - label: "Gallery Images"
         name: "gallery"
-        file: "public/data/gallery.json"
+        file: "src/data/gallery.json"
         fields:
           - label: "Images"
             name: "images"
@@ -144,5 +161,4 @@ collections:
               - { label: "ID", name: "id", widget: "number" }
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Category", name: "category", widget: "string" }
-              - { label: "Image URL", name: "image", widget: "image" }
-              - { label: "Description", name: "description", widget: "text", required: false }
+              - { label: "Image", name: "image", widget: "image" }
