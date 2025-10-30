@@ -2,25 +2,16 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "src/assets"
-public_folder: "/src/assets"
+media_folder: "public/assets"
+public_folder: "/assets"
 
 collections:
   - name: "doctors"
     label: "Doctors"
-    folder: "src/data"
-    extension: "json"
-    format: "json"
-    create: false
-    delete: false
-    slug: "doctors"
-    identifier_field: name
-    editor:
-      preview: false
     files:
       - label: "Doctors"
         name: "doctors"
-        file: "src/data/doctors.json"
+        file: "public/data/doctors.json"
         fields:
           - label: "Doctors"
             name: "doctors"
@@ -38,18 +29,10 @@ collections:
 
   - name: "services"
     label: "Services"
-    folder: "src/data"
-    extension: "json"
-    format: "json"
-    create: false
-    delete: false
-    slug: "services"
-    editor:
-      preview: false
     files:
       - label: "Services"
         name: "services"
-        file: "src/data/services.json"
+        file: "public/data/services.json"
         fields:
           - label: "Services"
             name: "services"
@@ -64,18 +47,10 @@ collections:
 
   - name: "packages"
     label: "Health Packages"
-    folder: "src/data"
-    extension: "json"
-    format: "json"
-    create: false
-    delete: false
-    slug: "healthPackages"
-    editor:
-      preview: false
     files:
       - label: "Health Packages"
         name: "healthPackages"
-        file: "src/data/healthPackages.json"
+        file: "public/data/healthPackages.json"
         fields:
           - label: "Packages"
             name: "packages"
@@ -99,18 +74,10 @@ collections:
 
   - name: "tests"
     label: "Lab Tests"
-    folder: "src/data"
-    extension: "json"
-    format: "json"
-    create: false
-    delete: false
-    slug: "tests"
-    editor:
-      preview: false
     files:
       - label: "Lab Tests"
         name: "tests"
-        file: "src/data/tests.json"
+        file: "public/data/tests.json"
         fields:
           - label: "Tests"
             name: "tests"
@@ -126,18 +93,10 @@ collections:
 
   - name: "feedback"
     label: "Patient Feedback"
-    folder: "src/data"
-    extension: "json"
-    format: "json"
-    create: false
-    delete: false
-    slug: "feedback"
-    editor:
-      preview: false
     files:
       - label: "Feedback"
         name: "feedback"
-        file: "src/data/feedback.json"
+        file: "public/data/feedback.json"
         fields:
           - label: "Feedback"
             name: "feedback"
@@ -153,18 +112,10 @@ collections:
 
   - name: "products"
     label: "Pharmacy Products"
-    folder: "src/data"
-    extension: "json"
-    format: "json"
-    create: false
-    delete: false
-    slug: "products"
-    editor:
-      preview: false
     files:
       - label: "Products"
         name: "products"
-        file: "src/data/products.json"
+        file: "public/data/products.json"
         fields:
           - label: "Products"
             name: "products"
@@ -181,18 +132,10 @@ collections:
 
   - name: "gallery"
     label: "Gallery"
-    folder: "src/data"
-    extension: "json"
-    format: "json"
-    create: false
-    delete: false
-    slug: "gallery"
-    editor:
-      preview: false
     files:
       - label: "Gallery Images"
         name: "gallery"
-        file: "src/data/gallery.json"
+        file: "public/data/gallery.json"
         fields:
           - label: "Images"
             name: "images"
@@ -203,4 +146,3 @@ collections:
               - { label: "Category", name: "category", widget: "string" }
               - { label: "Image URL", name: "image", widget: "image" }
               - { label: "Description", name: "description", widget: "text", required: false }
-
