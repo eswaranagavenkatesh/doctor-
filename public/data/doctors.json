@@ -1,0 +1,14 @@
+{
+  "doctors": [
+    {
+      "id": 10,
+      "name": "venkat",
+      "specialization": "btech",
+      "qualification": "cse",
+      "experience": "10",
+      "image": "/assets/my-passport-size-photo-1-.jpg",
+      "timing": "10am",
+      "phone": "9490981221"
+    }
+  ]
+}
