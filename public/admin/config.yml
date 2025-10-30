@@ -1,16 +1,25 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: eswaranagavenkatesh/doctor- # Updated with actual repo
   branch: main
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
 
 media_folder: "src/assets"
 public_folder: "/src/assets"
 
 collections:
-  # ================================
-  # DOCTORS
-  # ================================
   - name: "doctors"
     label: "Doctors"
+    folder: "src/data"
+    extension: "json"
+    format: "json"
+    create: false
+    delete: false
+    slug: "doctors"
+    identifier_field: name
+    editor:
+      preview: false
     files:
       - label: "Doctors"
         name: "doctors"
@@ -20,21 +29,26 @@ collections:
             name: "doctors"
             widget: "list"
             fields:
-              - { label: "ID", name: "id", widget: "string" }
+              - { label: "ID", name: "id", widget: "number" }
               - { label: "Name", name: "name", widget: "string" }
               - { label: "Specialization", name: "specialization", widget: "string" }
-              - { label: "Category", name: "category", widget: "string" }
+              - { label: "Qualification", name: "qualification", widget: "string" }
               - { label: "Experience", name: "experience", widget: "string" }
-              - { label: "Fee", name: "fee", widget: "number" }
               - { label: "Image", name: "image", widget: "image" }
-              - { label: "Qualifications", name: "qualifications", widget: "string" }
-              - { label: "Availability", name: "availability", widget: "string" }
+              - { label: "Available Days", name: "availableDays", widget: "list" }
+              - { label: "Timing", name: "timing", widget: "string" }
+              - { label: "Phone", name: "phone", widget: "string" }
 
-  # ================================
-  # SERVICES
-  # ================================
   - name: "services"
     label: "Services"
+    folder: "src/data"
+    extension: "json"
+    format: "json"
+    create: false
+    delete: false
+    slug: "services"
+    editor:
+      preview: false
     files:
       - label: "Services"
         name: "services"
@@ -44,46 +58,58 @@ collections:
             name: "services"
             widget: "list"
             fields:
-              - { label: "ID", name: "id", widget: "string" }
+              - { label: "ID", name: "id", widget: "number" }
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Description", name: "description", widget: "text" }
               - { label: "Icon", name: "icon", widget: "string" }
-              - { label: "Route", name: "route", widget: "string" }
-              - label: "Features"
-                name: "features"
-                widget: "list"
-                field: { label: "Feature", name: "feature", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
 
-  # ================================
-  # HEALTH PACKAGES
-  # ================================
   - name: "packages"
     label: "Health Packages"
+    folder: "src/data"
+    extension: "json"
+    format: "json"
+    create: false
+    delete: false
+    slug: "healthPackages"
+    editor:
+      preview: false
     files:
       - label: "Health Packages"
-        name: "packages"
+        name: "healthPackages"
         file: "src/data/healthPackages.json"
         fields:
           - label: "Packages"
             name: "packages"
             widget: "list"
             fields:
-              - { label: "ID", name: "id", widget: "string" }
+              - { label: "ID", name: "id", widget: "number" }
               - { label: "Name", name: "name", widget: "string" }
               - { label: "Description", name: "description", widget: "text" }
               - { label: "Price", name: "price", widget: "number" }
-              - label: "Tests"
-                name: "tests"
+              - { label: "Original Price", name: "originalPrice", widget: "number", required: false }
+              - label: "Tests Included"
+                name: "testsIncluded"
                 widget: "list"
                 field: { label: "Test", name: "test", widget: "string" }
-              - { label: "Image", name: "image", widget: "image" }
-              - { label: "Recommended For", name: "recommended", widget: "string" }
+              - label: "Benefits"
+                name: "benefits"
+                widget: "list"
+                field: { label: "Benefit", name: "benefit", widget: "string" }
+              - { label: "Suitable For", name: "suitableFor", widget: "string" }
+              - { label: "Popular", name: "popular", widget: "boolean", required: false }
 
-  # ================================
-  # LAB TESTS
-  # ================================
   - name: "tests"
     label: "Lab Tests"
+    folder: "src/data"
+    extension: "json"
+    format: "json"
+    create: false
+    delete: false
+    slug: "tests"
+    editor:
+      preview: false
     files:
       - label: "Lab Tests"
         name: "tests"
@@ -93,18 +119,24 @@ collections:
             name: "tests"
             widget: "list"
             fields:
-              - { label: "ID", name: "id", widget: "string" }
+              - { label: "ID", name: "id", widget: "number" }
               - { label: "Name", name: "name", widget: "string" }
+              - { label: "Category", name: "category", widget: "string" }
               - { label: "Description", name: "description", widget: "text" }
               - { label: "Price", name: "price", widget: "number" }
-              - { label: "Duration", name: "duration", widget: "string" }
               - { label: "Preparation", name: "preparation", widget: "string" }
+              - { label: "Report Time", name: "reportTime", widget: "string" }
 
-  # ================================
-  # PATIENT FEEDBACK
-  # ================================
   - name: "feedback"
     label: "Patient Feedback"
+    folder: "src/data"
+    extension: "json"
+    format: "json"
+    create: false
+    delete: false
+    slug: "feedback"
+    editor:
+      preview: false
     files:
       - label: "Feedback"
         name: "feedback"
@@ -114,18 +146,24 @@ collections:
             name: "feedback"
             widget: "list"
             fields:
-              - { label: "ID", name: "id", widget: "string" }
+              - { label: "ID", name: "id", widget: "number" }
               - { label: "Name", name: "name", widget: "string" }
               - { label: "Rating", name: "rating", widget: "number", min: 1, max: 5 }
-              - { label: "Message", name: "message", widget: "text" }
-              - { label: "Date", name: "date", widget: "date", format: "YYYY-MM-DD" }
-              - { label: "Avatar", name: "avatar", widget: "image" }
+              - { label: "Comment", name: "comment", widget: "text" }
+              - { label: "Date", name: "date", widget: "datetime" }
+              - { label: "Service", name: "service", widget: "string", required: false }
+              - { label: "Approved", name: "approved", widget: "boolean", default: true }
 
-  # ================================
-  # PHARMACY PRODUCTS
-  # ================================
   - name: "products"
     label: "Pharmacy Products"
+    folder: "src/data"
+    extension: "json"
+    format: "json"
+    create: false
+    delete: false
+    slug: "products"
+    editor:
+      preview: false
     files:
       - label: "Products"
         name: "products"
@@ -135,20 +173,25 @@ collections:
             name: "products"
             widget: "list"
             fields:
-              - { label: "ID", name: "id", widget: "string" }
+              - { label: "ID", name: "id", widget: "number" }
               - { label: "Name", name: "name", widget: "string" }
               - { label: "Category", name: "category", widget: "string" }
-              - { label: "Price", name: "price", widget: "number" }
-              - { label: "In Stock", name: "inStock", widget: "boolean", default: true }
-              - { label: "Image", name: "image", widget: "image" }
               - { label: "Description", name: "description", widget: "text" }
-              - { label: "Prescription Required", name: "prescription", widget: "boolean", required: false }
+              - { label: "Price", name: "price", widget: "number" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "In Stock", name: "inStock", widget: "boolean" }
+              - { label: "Prescription Required", name: "prescriptionRequired", widget: "boolean" }
 
-  # ================================
-  # GALLERY
-  # ================================
   - name: "gallery"
     label: "Gallery"
+    folder: "src/data"
+    extension: "json"
+    format: "json"
+    create: false
+    delete: false
+    slug: "gallery"
+    editor:
+      preview: false
     files:
       - label: "Gallery Images"
         name: "gallery"
@@ -161,4 +204,5 @@ collections:
               - { label: "ID", name: "id", widget: "number" }
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Category", name: "category", widget: "string" }
-              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Image URL", name: "image", widget: "image" }
+              - { label: "Description", name: "description", widget: "text", required: false }
