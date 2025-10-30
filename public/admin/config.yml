@@ -1,9 +1,6 @@
 backend:
-  name: github
-  repo: eswaranagavenkatesh/doctor- # Updated with actual repo
+  name: git-gateway
   branch: main
-  base_url: https://api.netlify.com
-  auth_endpoint: auth
 
 media_folder: "src/assets"
 public_folder: "/src/assets"
@@ -206,3 +203,4 @@ collections:
               - { label: "Category", name: "category", widget: "string" }
               - { label: "Image URL", name: "image", widget: "image" }
               - { label: "Description", name: "description", widget: "text", required: false }
+
