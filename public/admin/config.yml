@@ -1,0 +1,208 @@
+backend:
+  name: github
+  repo: YOUR_GITHUB_USERNAME/YOUR_REPO_NAME # Replace with your GitHub repo
+  branch: main
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
+
+media_folder: "src/assets"
+public_folder: "/src/assets"
+
+collections:
+  - name: "doctors"
+    label: "Doctors"
+    folder: "src/data"
+    extension: "json"
+    format: "json"
+    create: false
+    delete: false
+    slug: "doctors"
+    identifier_field: name
+    editor:
+      preview: false
+    files:
+      - label: "Doctors"
+        name: "doctors"
+        file: "src/data/doctors.json"
+        fields:
+          - label: "Doctors"
+            name: "doctors"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "number" }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Specialization", name: "specialization", widget: "string" }
+              - { label: "Qualification", name: "qualification", widget: "string" }
+              - { label: "Experience", name: "experience", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Available Days", name: "availableDays", widget: "list" }
+              - { label: "Timing", name: "timing", widget: "string" }
+              - { label: "Phone", name: "phone", widget: "string" }
+
+  - name: "services"
+    label: "Services"
+    folder: "src/data"
+    extension: "json"
+    format: "json"
+    create: false
+    delete: false
+    slug: "services"
+    editor:
+      preview: false
+    files:
+      - label: "Services"
+        name: "services"
+        file: "src/data/services.json"
+        fields:
+          - label: "Services"
+            name: "services"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "number" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Icon", name: "icon", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+
+  - name: "packages"
+    label: "Health Packages"
+    folder: "src/data"
+    extension: "json"
+    format: "json"
+    create: false
+    delete: false
+    slug: "healthPackages"
+    editor:
+      preview: false
+    files:
+      - label: "Health Packages"
+        name: "healthPackages"
+        file: "src/data/healthPackages.json"
+        fields:
+          - label: "Packages"
+            name: "packages"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "number" }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Price", name: "price", widget: "number" }
+              - { label: "Original Price", name: "originalPrice", widget: "number", required: false }
+              - label: "Tests Included"
+                name: "testsIncluded"
+                widget: "list"
+                field: { label: "Test", name: "test", widget: "string" }
+              - label: "Benefits"
+                name: "benefits"
+                widget: "list"
+                field: { label: "Benefit", name: "benefit", widget: "string" }
+              - { label: "Suitable For", name: "suitableFor", widget: "string" }
+              - { label: "Popular", name: "popular", widget: "boolean", required: false }
+
+  - name: "tests"
+    label: "Lab Tests"
+    folder: "src/data"
+    extension: "json"
+    format: "json"
+    create: false
+    delete: false
+    slug: "tests"
+    editor:
+      preview: false
+    files:
+      - label: "Lab Tests"
+        name: "tests"
+        file: "src/data/tests.json"
+        fields:
+          - label: "Tests"
+            name: "tests"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "number" }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Category", name: "category", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Price", name: "price", widget: "number" }
+              - { label: "Preparation", name: "preparation", widget: "string" }
+              - { label: "Report Time", name: "reportTime", widget: "string" }
+
+  - name: "feedback"
+    label: "Patient Feedback"
+    folder: "src/data"
+    extension: "json"
+    format: "json"
+    create: false
+    delete: false
+    slug: "feedback"
+    editor:
+      preview: false
+    files:
+      - label: "Feedback"
+        name: "feedback"
+        file: "src/data/feedback.json"
+        fields:
+          - label: "Feedback"
+            name: "feedback"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "number" }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Rating", name: "rating", widget: "number", min: 1, max: 5 }
+              - { label: "Comment", name: "comment", widget: "text" }
+              - { label: "Date", name: "date", widget: "datetime" }
+              - { label: "Service", name: "service", widget: "string", required: false }
+              - { label: "Approved", name: "approved", widget: "boolean", default: true }
+
+  - name: "products"
+    label: "Pharmacy Products"
+    folder: "src/data"
+    extension: "json"
+    format: "json"
+    create: false
+    delete: false
+    slug: "products"
+    editor:
+      preview: false
+    files:
+      - label: "Products"
+        name: "products"
+        file: "src/data/products.json"
+        fields:
+          - label: "Products"
+            name: "products"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "number" }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Category", name: "category", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Price", name: "price", widget: "number" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "In Stock", name: "inStock", widget: "boolean" }
+              - { label: "Prescription Required", name: "prescriptionRequired", widget: "boolean" }
+
+  - name: "gallery"
+    label: "Gallery"
+    folder: "src/data"
+    extension: "json"
+    format: "json"
+    create: false
+    delete: false
+    slug: "gallery"
+    editor:
+      preview: false
+    files:
+      - label: "Gallery Images"
+        name: "gallery"
+        file: "src/data/gallery.json"
+        fields:
+          - label: "Images"
+            name: "images"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "number" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Category", name: "category", widget: "string" }
+              - { label: "Image URL", name: "image", widget: "image" }
+              - { label: "Description", name: "description", widget: "text", required: false }
